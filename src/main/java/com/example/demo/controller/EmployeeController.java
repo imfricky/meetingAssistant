@@ -46,5 +46,8 @@ public class EmployeeController {
 
         return employeeService.getEmployee(id);
     }
-
+    @GetMapping("/")
+    	String helloWorld() {
+        	return "Hello World!";
+    }
 }
